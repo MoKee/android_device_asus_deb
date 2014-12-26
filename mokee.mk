@@ -1,23 +1,22 @@
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_tablet_wifionly.mk)
 
 # Inherit telephony stuff
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/mk/config/telephony.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/full_deb.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
-PRODUCT_NAME := cm_deb
+PRODUCT_NAME := mk_deb
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
