@@ -1,5 +1,9 @@
 [
  {
+   "repository": "android_vendor_asus_deb",
+   "target_path": "vendor/asus/deb"
+ },
+ {
    "repository": "android_device_asus_flo",
    "target_path": "device/asus/flo"
  }
