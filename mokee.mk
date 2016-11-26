@@ -10,9 +10,6 @@ $(call inherit-product, vendor/mk/config/common_mini_tablet_wifionly.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/mk/config/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/full_deb.mk)
 
